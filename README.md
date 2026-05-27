@@ -132,16 +132,28 @@ speed_kmph = speed_mps × 3.6
 
 ---
 
-## 📸 Output
+## 🎬 Output Demo
 
-<!-- 
-  TO ADD OUTPUT IMAGE:
-  1. Take a screenshot from your output video (output.avi)
-  2. Save it as "output_sample.png" inside an "assets/" folder in your repo
-  3. Replace the line below with your actual image
--->
+> GitHub does not support direct `.avi` playback. Follow the steps below to watch the output video:
 
-![Output Sample](assets/output_sample.png)
+**Option 1 — Convert & Upload to GitHub (Recommended)**  
+Convert your `.avi` to `.mp4` using this command, then upload to the `output/` folder:
+```bash
+ffmpeg -i output_video.avi -vcodec libx264 output_video.mp4
+```
+Then embed it in README like this (replace the URL after uploading):
+```
+https://github.com/tharunshree13/intelligent-video-surveillance/raw/main/output/output_video.mp4
+```
+
+**Option 2 — Upload to YouTube**  
+Upload your output video to YouTube and paste the link here:
+```
+[![Watch Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+```
+
+**Option 3 — Download & Watch Locally**  
+Download `output/output_video.avi` from this repo and open with VLC Media Player.
 
 *Vehicle detected with bounding box and speed label (km/h) displayed in real time.*
 
@@ -183,7 +195,7 @@ The system successfully:
 
 ---
 
-## 👨‍💻 Authors
+## 👨‍💻 Author
 
 | Name | Roll No | GitHub |
 |---|---|---|
